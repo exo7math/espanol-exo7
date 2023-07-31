@@ -3,9 +3,9 @@
 ## Ejercicios
 
 Aquí encontrarás cerca de 8000 ejercicios de matemáticas para la universidad, con algunas correcciones.
-* [Archivo pdf] (ficall_espanol.pdf)
-* [Fuente LaTeX] (ficall_espanol.tex)
-* [Imágenes] (images/)
+* [Archivo pdf ficall_espanol.pdf](ficall_espanol.pdf)
+* [Fuente LaTeX ficall_espanol.tex](ficall_espanol.tex)
+* [Imágenes images/](images/)
 
 ## Fuente
 
@@ -19,9 +19,9 @@ La traducción fue realizada por Jorge Poltronieri, profesor jubilado de la Univ
 ## Exercices
 
 Vous trouverez ici près de 8000 exercices de mathématiques pour l'université, avec quelques corrections.
-* [Fichier pdf] (ficall_espanol.pdf)
-* [Source LaTeX] (ficall_espanol.tex)
-* [Images] (images/)
+* [Fichier pdf ficall_espanol.pdf](ficall_espanol.pdf)
+* [Source LaTeX ficall_espanol.tex](ficall_espanol.tex)
+* [Images images/](images/)
 
 ## Origine
 
