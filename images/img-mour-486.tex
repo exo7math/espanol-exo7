@@ -1,0 +1,54 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+
+\begin{tikzpicture}[linecolor=red,line width=1.pt,scale=1,line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+%\begin{axis}[
+x=1.0cm,y=1.0cm,
+axis lines=middle,
+ymajorgrids=true,
+xmajorgrids=true,
+xmin=0,
+xmax=6,
+ymin=0,
+ymax=4.5,
+xtick={0,1,...,6},
+ytick={0,1,...,5}]
+%\clip(-3.4499022547977516,-0.7930976097548447) rectangle (7.0972340380812815,6.4135729707322495);
+\draw[color=blue]  (0,4.26)-- (5.676,0.811);
+\draw[color=blue]  (0.4825814674740695,4.260403498944045)-- (1.0337979742669225,0.0987188726580115);
+\draw[color=blue]  (0.5508910934930773,3.3066675390292226)-- (0.659972114965624,3.3250404223161927);
+\draw[color=blue]  (0.6890265515708165,2.3251787579505514)-- (0.7871754296786839,2.341536904301863);
+\draw[color=blue]  (1.5251095873045015,3.2903093926779112)-- (1.575039560939768,3.366913639292555);
+\draw[color=blue]  (2.004948546942964,2.984957327453436)-- (2.060490253143679,3.0851485522091675);
+\draw[color=blue]  (4.940420236106572,1.1731899298525792)-- (5.030100095197867,1.3085284304577642);
+\draw[color=blue]  (0.9086444355231839,0.644102190166178)-- (1.0125673568096312,0.6637632833825329);
+\draw[color=blue]  (0.7566829748799603,1.073837513323649)-- (0.9535840771605665,1.0934986065400039);
+\begin{small}
+%\draw[color=blue] [fill=blue] (5.676375409677988,0.8118131432505931) circle (2.5pt);
+\draw[color=blue][color=blue] (5.528104865674432,0.6506629947535125) node {$d'$};
+%\draw[color=blue] [fill=blue] (1.0337979742669225,0.0987188726580115) circle (2.5pt);
+\draw[color=blue][color=blue] (0.8530705272663939,0.16536531256582943) node {$d$};
+%\draw[color=blue] [fill=blue] (0.5508910934930773,3.3066675390292226) circle (2.5pt);
+\draw[color=blue][color=blue] (0.3515962556724521,3.3764183097076663) node {$A$};
+%\draw[color=blue] [fill=blue] (0.6890265515708165,2.3251787579505514) circle (2.5pt);
+\draw[color=blue][color=blue] (0.5052738550318858,2.3572931771135317) node {$B$};
+%\draw[color=blue] [fill=blue] (1.575039560939768,3.366913639292555) circle (2.5pt);
+\draw[color=blue][color=blue] (1.7023414710948437,3.5948022666921235) node {$A'$};
+%\draw[color=blue] [fill=blue] (2.060490253143679,3.0851485522091675) circle (2.5pt);
+\draw[color=blue][color=blue] (2.1876391532825292,3.311711952082642) node {$B'$};
+%\draw[color=blue] [fill=blue] (5.030100095197867,1.3085284304577642) circle (2.5pt);
+\draw[color=blue][color=blue] (5.156043309330539,1.540375412097598) node {$C'$};
+%\draw[color=blue] [fill=blue] (0.9086444355231839,0.644102190166178) circle (2.5pt);
+\draw[color=blue][color=blue] (0.7074812226100882,0.6344864053472564) node {$C$};
+%\draw[color=blue] [fill=blue] (0.7566829748799603,1.073837513323649) circle (2.5pt);
+\draw[color=blue][color=blue] (0.5854237060789063,1.0812845800531) node {$M$};
+\end{small}
+%\end{axis}
+\end{tikzpicture}
+\end{document} 

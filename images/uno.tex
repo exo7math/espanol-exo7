@@ -1,0 +1,42 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+
+%<<<<<<<WARNING>>>>>>>
+% PGF/Tikz doesn't support the following mathematical functions:
+% cosh, acosh, sinh, asinh, tanh, atanh,
+% x^r with r not integer
+
+% Plotting will be done using GNUPLOT
+% GNUPLOT must be installed and you must allow Latex to call external
+% programs by adding the following option to your compiler
+% shell-escape    OR    enable-write18
+% Example: pdflatex --shell-escape file.tex
+
+\begin{document}
+aaaA
+\fbox{\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.35cm,y=0.35cm]
+\clip(0.32,0) rectangle (0.68,0.8);
+\begin{axis}[x=1.0cm,y=1.cm,
+xmin=0.32,xmax=0.7,ymin=08,ymax=0.8]
+%\draw [->,line width=5.2pt] (-10.,0.) -- (15.,0.);
+%\draw [->,line width=4.8pt] (0.,-10.) -- (0.,12.);
+\draw [line width=0.5pt](0.32,0.)--(0.68,0.);
+\draw [line width=0.5pt](0.46,0.)--(0.46,0.7);
+\draw [line width=0.5pt](0.54,0.)--(0.54,0.7);
+\draw [line width=0.5pt](0.54,0.7)--(0.46,0.7);
+\draw [line width=0.5pt](0.46,0.7)--(0.3,0.6);
+\draw [line width=0.5pt](0.3,0.6)--(0.32,0.57);
+\draw [line width=0.5pt](0.33,0.575)--(0.46,0.66);
+\begin{scriptsize}
+%\draw[color=black] (18.0836144608884204,14.524327230931295) node {$d$};
+%\draw[color=black] (18.745995669491073,-1.9278542083151073) node {$e$};
+%\draw[color=black] (-10.011515996917659,-7.832609738565186) node {$k$};
+\end{scriptsize}
+\end{tikzpicture}}
+Bbbb
+\end{document} 

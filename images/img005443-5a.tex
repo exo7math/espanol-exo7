@@ -1,0 +1,24 @@
+\begin{pspicture}(-8.1,-1.5)(0.1,6.7)
+\psset{xunit=1cm,yunit=1cm}
+\psaxes{->}(0,0)(-7.2,-1.3)(5.2,6.5)
+\psline[linestyle=dashed](1.57,-1.3)(1.57,6.2)
+\psline[linestyle=dashed](-1.57,-1.3)(-1.57,6.2)
+\psline[linestyle=dashed](4.72,-1.3)(4.72,6.2)
+\psline[linestyle=dashed](-4.72,-1.3)(-4.72,6.2)
+\psline[linestyle=dashed](3.141,0)(3.141,-1)
+\psline[linestyle=dashed](-3.141,0)(-3.141,-1)
+\psplot[plotpoints=10000]{4.89}{6}{x 3.14 div 180 mul sin x 3.14 div 180 mul cos div abs x 3.14 div 180 mul cos add}
+\psplot[plotpoints=10000]{-1.4}{1.4}{x 3.14 div 180 mul sin x 3.14 div 180 mul cos div abs x 3.14 div 180 mul cos add}
+\psplot[plotpoints=10000]{1.74}{4.55}{x 3.14 div 180 mul sin x 3.14 div 180 mul cos div abs x 3.14 div 180 mul cos add}
+\psplot[plotpoints=10000]{-4.55}{-1.74}{x 3.14 div 180 mul sin x 3.14 div 180 mul cos div abs x 3.14 div 180 mul cos add}
+\psplot[plotpoints=10000]{-6}{-4.89}{x 3.14 div 180 mul sin x 3.14 div 180 mul cos div abs x 3.14 div 180 mul cos add}
+\psline{->}(0,1)(0.7,1.7)
+\psline{->}(0,1)(-0.7,1.7)
+\psline{->}(3.141,-1)(3.841,-0.3)
+\psline{->}(3.141,-1)(2.441,-0.3)
+\psline{->}(-3.141,-1)(-2,441,-0.3)
+\psline{->}(-3.141,-1)(-3.841,-0.3)
+\uput[u](1.5,6.1){$y=f_2(x)$}
+\uput[u](3.141,0){$\pi$}
+\uput[u](-3.141,0){$-\pi$}
+\end{pspicture}

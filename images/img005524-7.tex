@@ -1,0 +1,24 @@
+%<<<<<<<WARNING>>>>>>>
+% PGF/Tikz doesn't support the following mathematical functions:
+% cosh, acosh, sinh, asinh, tanh, atanh,
+% x^r with r not integer
+% Plotting will be done using GNUPLOT
+% GNUPLOT must be installed and you must allow Latex to call external
+% programs by adding the following option to your compiler
+% shell-escape    OR    enable-write18
+% Example: pdflatex --shell-escape file.tex
+\begin{tikzpicture}[scale=0.3,line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\begin{axis}[x=1cm,y=1cm,axis lines=middle,xmin=-15,xmax=15,ymin=-10,ymax=16,
+xtick={-15.0,-14.0,...,15.0},
+ytick={-10.0,-9.0,...,10.0},]
+%\clip(-10,-19) rectangle (15,12);
+\draw [->,line width=1.2pt] (-10.,0.) -- (15.,0.);
+\draw [->,line width=1.2pt] (0.,-10.) -- (0.,12.);
+%\draw[line width=1.pt, smooth,samples=200,domain=3.3:15.0] plot ({\x^3/(\x^2-9)},{\x*(\x-2)/(\x-3)});
+%\draw[line width=1.pt, smooth,samples=200,domain=-2.8:2.7] plot ({\x^3/(\x^2-9)},{\x*(\x-2)/(\x-3)});
+%\draw[line width=1.pt,smooth,samples=200,domain=-9.0:-3.3] plot ({\x^3/(\x^2-9)},{\x*(\x-2)/(\x-3)});
+\draw[line width=1.pt,smooth,samples=500,domain=-20.0:30.0] plot ({\x^3/(\x^2-9)},{\x*(\x-2)/(\x-3)});
+\begin{scriptsize}
+\end{scriptsize}
+\end{axis}
+\end{tikzpicture}
